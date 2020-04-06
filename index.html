@@ -16,6 +16,30 @@
 
   <title>inmec_website</title>
   <link rel="manifest" href="manifest.json">
+
+  <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-storage.js"></script>
+
+  <script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyACTnPh1p6KVFm7wfhL70K_GdXZ4uL9DjY",
+    authDomain: "inmecwebsite.firebaseapp.com",
+    databaseURL: "https://inmecwebsite.firebaseio.com",
+    projectId: "inmecwebsite",
+    storageBucket: "inmecwebsite.appspot.com",
+    messagingSenderId: "1047844549959",
+    appId: "1:1047844549959:web:60abe09e2c51e921048862",
+    measurementId: "G-19L9ETV4N2"
+  };
+
+
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  </script>
+
 </head>
 <body>
   <!-- This script installs service_worker.js to provide PWA functionality to
@@ -28,6 +52,8 @@
       });
     }
   </script>
+
+
   <script src="main.dart.js" type="application/javascript"></script>
 </body>
 </html>
